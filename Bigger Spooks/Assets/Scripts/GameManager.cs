@@ -4,15 +4,19 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public Furniture[] furnitures = {};
+    void Update()
     {
         
     }
 
-    // Update is called once per frame
-    void Update()
+    public int calculateScore()
     {
-        
+        int sum = 0;
+        foreach(Furniture f in furnitures)
+        {
+            sum += f.getScore();
+        }
+        return sum;
     }
 }

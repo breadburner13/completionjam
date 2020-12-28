@@ -7,9 +7,10 @@ public class Ghost : MonoBehaviour
     public Furniture currFurniture;
     private float x_input;
     private float y_input;
+    private GameManager gm;
     void Start()
     {
-        
+        gm = FindObjectOfType<GameManager>();
     }
 
     void Update()
@@ -25,6 +26,7 @@ public class Ghost : MonoBehaviour
         {
             currFurniture.furnitureRB.velocity = new Vector2(x_input, y_input).normalized * currFurniture.speed;
         }
+        Debug.Log(gm.calculateScore());
     }
 
     public void possess(Furniture f)

@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -10,16 +11,23 @@ public class Furniture : MonoBehaviour
     public float friction;
     public Ghost ghost;
     public Rigidbody2D furnitureRB;
+    private Vector3 startPos;
     void Awake() 
     {
         ghost = GameObject.FindGameObjectWithTag("Ghost").GetComponent<Ghost>();
         furnitureRB = GetComponent<Rigidbody2D>();
         furnitureRB.drag = friction;
         furnitureRB.angularDrag = friction;
+        startPos = transform.position;
     }
     void Update()
     {
         
+    }
+
+    public int getScore()
+    {
+        return (int)Math.Round(Vector3.Distance(transform.position, startPos));
     }
     void OnMouseDown() 
     {
