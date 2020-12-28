@@ -7,10 +7,13 @@ public class Furniture : MonoBehaviour
     // Start is called before the first frame update
     public bool possessed; 
     public float speed;
+    public float friction;
     public Rigidbody2D furnitureRB;
     void Awake() 
     {
         furnitureRB = GetComponent<Rigidbody2D>();
+        furnitureRB.drag = friction;
+        furnitureRB.angularDrag = friction;
     }
     void Update()
     {
