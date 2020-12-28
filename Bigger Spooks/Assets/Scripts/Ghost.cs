@@ -26,4 +26,11 @@ public class Ghost : MonoBehaviour
             currFurniture.furnitureRB.velocity = new Vector2(x_input, y_input).normalized * currFurniture.speed;
         }
     }
+
+    public void possess(Furniture f)
+    {
+        currFurniture.possessed = false;
+        currFurniture = f;
+        f.possessed = true;
+    }
 }

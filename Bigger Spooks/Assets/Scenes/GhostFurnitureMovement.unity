@@ -263,8 +263,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   possessed: 0
-  speed: 2
+  speed: 3
   friction: 10
+  ghost: {fileID: 0}
   furnitureRB: {fileID: 0}
 --- !u!50 &727353065
 Rigidbody2D:
@@ -363,7 +364,7 @@ GameObject:
   - component: {fileID: 902374661}
   m_Layer: 0
   m_Name: ghost
-  m_TagString: Untagged
+  m_TagString: Ghost
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -454,8 +455,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   possessed: 0
-  speed: 2
-  friction: 5
+  speed: 10
+  friction: 0.1
+  ghost: {fileID: 0}
   furnitureRB: {fileID: 0}
 --- !u!50 &1059511630
 Rigidbody2D:
@@ -601,8 +603,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   possessed: 0
-  speed: 2
+  speed: 1
   friction: 8
+  ghost: {fileID: 0}
   furnitureRB: {fileID: 0}
 --- !u!50 &1139546041
 Rigidbody2D:
@@ -722,8 +725,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   possessed: 0
-  speed: 2
+  speed: 5
   friction: 10
+  ghost: {fileID: 0}
   furnitureRB: {fileID: 0}
 --- !u!50 &1786982353
 Rigidbody2D:
