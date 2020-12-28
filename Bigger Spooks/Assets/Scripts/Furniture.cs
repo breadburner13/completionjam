@@ -11,13 +11,16 @@ public class Furniture : MonoBehaviour
     public float friction;
     public Ghost ghost;
     public Rigidbody2D furnitureRB;
+    public Collider2D furnitureCD;
     private Vector3 startPos;
     void Awake() 
     {
         ghost = GameObject.FindGameObjectWithTag("Ghost").GetComponent<Ghost>();
         furnitureRB = GetComponent<Rigidbody2D>();
+        furnitureCD = GetComponent<Collider2D>();
         furnitureRB.drag = friction;
         furnitureRB.angularDrag = friction;
+        furnitureCD.density = friction/500;
         startPos = transform.position;
     }
     void Update()
