@@ -13,7 +13,7 @@ public class FurnitureManager : MonoBehaviour
     }
     void Update()
     {
-        Debug.Log(tracking.position);
+        
     }
 
     public int calculateScore()
