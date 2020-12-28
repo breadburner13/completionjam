@@ -6,14 +6,16 @@ public class FurnitureManager : MonoBehaviour
 {
     public Furniture[] furnitures = {};
     public Transform tracking;
+    public Rigidbody2D trackingRB;
 
     void Awake() 
     {
         tracking = FindObjectOfType<Ghost>().transform;
+        trackingRB = FindObjectOfType<Ghost>().GetComponent<Rigidbody2D>();
     }
     void Update()
     {
-        Debug.Log(tracking.position);
+        
     }
 
     public int calculateScore()

@@ -34,6 +34,7 @@ public class Ghost : MonoBehaviour
             currFurniture.possessed = false;
             currFurniture = null;
             gm.tracking = this.transform;
+            gm.trackingRB = GetComponent<Rigidbody2D>();
         }
     }
 
@@ -56,6 +57,7 @@ public class Ghost : MonoBehaviour
         currFurniture = f;
         f.possessed = true;
         gm.tracking = currFurniture.transform;
+        gm.trackingRB = currFurniture.GetComponent<Rigidbody2D>();
     }
 
     public void takeDamage(float dmg)

@@ -7,6 +7,13 @@
         <e p="Enemies" t="Include">
           <e p="GhostBuster.cs" t="Include" />
         </e>
+        <e p="Scripts" t="Include">
+          <e p="Furniture.cs" t="Include" />
+          <e p="FurnitureManager.cs" t="Include" />
+          <e p="Ghost.cs" t="Include" />
+          <e p="GhostBuster.cs" t="Include" />
+          <e p="LaserController.cs" t="Include" />
+        </e>
       </e>
       <e p="Bigger Spooks.sln" t="IncludeFlat" />
       <e p="obj" t="ExcludeRecursive" />
