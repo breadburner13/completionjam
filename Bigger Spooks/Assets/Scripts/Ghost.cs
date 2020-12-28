@@ -43,7 +43,7 @@ public class Ghost : MonoBehaviour
         if(currFurniture)
         {
             currFurniture.furnitureRB.velocity = new Vector2(x_input, y_input).normalized * currFurniture.speed * ghostSpeed;
-            Debug.Log(gm.calculateScore());
+            //Debug.Log(gm.calculateScore());
         }
     }
 

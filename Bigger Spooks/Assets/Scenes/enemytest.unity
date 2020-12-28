@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 89130911}
   m_Layer: 0
   m_Name: furniture test (1)
-  m_TagString: Untagged
+  m_TagString: Furniture
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -184,6 +184,7 @@ MonoBehaviour:
   friction: 10
   ghost: {fileID: 0}
   furnitureRB: {fileID: 0}
+  furnitureCD: {fileID: 0}
 --- !u!50 &89130913
 Rigidbody2D:
   serializedVersion: 4
@@ -285,7 +286,7 @@ GameObject:
   - component: {fileID: 468593818}
   - component: {fileID: 468593824}
   m_Layer: 0
-  m_Name: New Sprite
+  m_Name: GhostBuster Model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -618,7 +619,7 @@ GameObject:
   - component: {fileID: 970801058}
   m_Layer: 0
   m_Name: furniture test (2)
-  m_TagString: Untagged
+  m_TagString: Furniture
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -666,6 +667,7 @@ MonoBehaviour:
   friction: 0.1
   ghost: {fileID: 0}
   furnitureRB: {fileID: 0}
+  furnitureCD: {fileID: 0}
 --- !u!50 &970801060
 Rigidbody2D:
   serializedVersion: 4
@@ -766,7 +768,7 @@ GameObject:
   - component: {fileID: 1459255116}
   m_Layer: 0
   m_Name: furniture test (3)
-  m_TagString: Untagged
+  m_TagString: Furniture
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -814,6 +816,7 @@ MonoBehaviour:
   friction: 8
   ghost: {fileID: 0}
   furnitureRB: {fileID: 0}
+  furnitureCD: {fileID: 0}
 --- !u!50 &1459255118
 Rigidbody2D:
   serializedVersion: 4
@@ -997,7 +1000,7 @@ GameObject:
   - component: {fileID: 2024069177}
   m_Layer: 0
   m_Name: furniture test
-  m_TagString: Untagged
+  m_TagString: Furniture
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1019,6 +1022,7 @@ MonoBehaviour:
   friction: 10
   ghost: {fileID: 0}
   furnitureRB: {fileID: 0}
+  furnitureCD: {fileID: 0}
 --- !u!61 &2024069177
 BoxCollider2D:
   m_ObjectHideFlags: 0

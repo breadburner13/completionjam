@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ghostbuster : MonoBehaviour
+public class GhostBuster : MonoBehaviour
 {
     #region movment vars
     [SerializeField]

@@ -41,11 +41,14 @@ public class LaserController : MonoBehaviour
             fireStartTime = 0;
         }
         else if (firing) {
-            RaycastHit2D hit = Physics2D.Raycast(transform.position, direction, laserLength);
-            Debug.Log(hit.transform.position);
-            if (hit.transform == fm.tracking)
+            RaycastHit2D hit = Physics2D.Raycast(transform.position + direction, direction, laserLength);
+            if (hit.collider != null && hit.collider.CompareTag("Furniture"))
             {
-                target.ghostSpeed = slowSpeed;
+                Furniture furniture = hit.collider.GetComponent<Furniture>();
+                if (furniture.possessed)
+                {
+                    target.ghostSpeed = slowSpeed;
+                }
             }
         }
 
