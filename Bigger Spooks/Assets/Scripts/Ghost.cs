@@ -7,12 +7,14 @@ public class Ghost : MonoBehaviour
     public Furniture currFurniture;
     private float x_input;
     private float y_input;
-    private GameManager gm;
+    private FurnitureManager gm;
     private SpriteRenderer ghostSR;
     private Vector3 mousepos;
+    public float ghostSpeed;
+    public float ghostHealth;
     void Start()
     {
-        gm = FindObjectOfType<GameManager>();
+        gm = FindObjectOfType<FurnitureManager>();
         ghostSR = GetComponent<SpriteRenderer>();
         this.ghostSR.enabled = true;
         currFurniture = null;
@@ -24,7 +26,6 @@ public class Ghost : MonoBehaviour
         y_input = Input.GetAxisRaw("Vertical");
         mousepos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         mousepos.z = 10;
-        //transform.position = mousepos;
         this.transform.position = mousepos;
         move();
         if (Input.GetKeyDown("z"))
@@ -32,6 +33,7 @@ public class Ghost : MonoBehaviour
             this.ghostSR.enabled = true;
             currFurniture.possessed = false;
             currFurniture = null;
+            gm.tracking = this.transform;
         }
     }
 
@@ -39,7 +41,7 @@ public class Ghost : MonoBehaviour
     {
         if(currFurniture)
         {
-            currFurniture.furnitureRB.velocity = new Vector2(x_input, y_input).normalized * currFurniture.speed;
+            currFurniture.furnitureRB.velocity = new Vector2(x_input, y_input).normalized * currFurniture.speed * ghostSpeed;
         }
         //Debug.Log(gm.calculateScore());
     }
@@ -53,5 +55,15 @@ public class Ghost : MonoBehaviour
         }
         currFurniture = f;
         f.possessed = true;
+        gm.tracking = currFurniture.transform;
+    }
+
+    public void takeDamage(float dmg)
+    {
+        ghostHealth -= dmg; 
+        if (ghostHealth <= 0)
+        {
+            //show's over
+        }
     }
 }

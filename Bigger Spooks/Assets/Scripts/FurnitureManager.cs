@@ -2,12 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameManager : MonoBehaviour
+public class FurnitureManager : MonoBehaviour
 {
     public Furniture[] furnitures = {};
+    public Transform tracking;
+
+    void Awake() 
+    {
+        tracking = FindObjectOfType<Ghost>().transform;
+    }
     void Update()
     {
-        
+        Debug.Log(tracking.position);
     }
 
     public int calculateScore()
