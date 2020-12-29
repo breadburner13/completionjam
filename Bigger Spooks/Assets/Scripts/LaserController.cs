@@ -20,6 +20,7 @@ public class LaserController : MonoBehaviour
     private Vector3 direction;
     private FurnitureManager fm;
     private Ghost target;
+    private Health health;
 
     void Start()
     {
@@ -30,11 +31,12 @@ public class LaserController : MonoBehaviour
         target = FindObjectOfType<Ghost>();
         originalSpeed = target.ghostSpeed;
         firing = false;
+        health = GetComponent<Health>();
     }
 
     void Update()
     {
-        if (firing && Time.time - fireStartTime >= attackLength)
+        if (firing && Time.time - fireStartTime >= attackLength || health.health <= 0)
         {
             firing = false;
             lineRenderer.enabled = false;
@@ -69,5 +71,12 @@ public class LaserController : MonoBehaviour
             firing = true;
             fireStartTime = Time.time;   
         }
+    }
+
+    private void AbsorbTime()
+    {
+        firing = false;
+        lineRenderer.enabled = false;
+        fireStartTime = 0;
     }
 }

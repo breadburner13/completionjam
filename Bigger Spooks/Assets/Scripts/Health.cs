@@ -6,11 +6,36 @@ using UnityEngine;
 public class Health : MonoBehaviour
 {
     public int maxHealth;
-    private int health;
+    public int health;
+    public Vector3 spawnpoint;
+    private float respawnTimer;
+    
+    [SerializeField] private float respawnLength;
 
+    [SerializeField] private bool respawn;
+    private bool respawning;
     void Start()
     {
+        spawnpoint = this.transform.position;
         health = maxHealth;
+        respawning = false;
+    }
+
+    void Update() 
+    {
+        if(respawning)
+        {
+            if(respawnTimer <= 0)
+            {
+                this.transform.position = spawnpoint;
+                health = maxHealth;
+                respawning = false;
+            }
+            else
+            {
+                respawnTimer -= Time.deltaTime;
+            }
+        }
     }
 
     public void GainHealth(int gain)
@@ -20,7 +45,7 @@ public class Health : MonoBehaviour
     
     public void LoseHealth(int loss)
     {
-        health = health - loss;
+        health -= loss;
         if (health <= 0)
         {
             Die();
@@ -29,6 +54,12 @@ public class Health : MonoBehaviour
 
     public void Die()
     {
-        Destroy(this.gameObject);
+        if(!respawn)
+        {
+            Destroy(this.gameObject);
+        }
+        this.transform.position = new Vector3(100000,100000,0);
+        respawnTimer = respawnLength;
+        respawning = true;
     }
 }

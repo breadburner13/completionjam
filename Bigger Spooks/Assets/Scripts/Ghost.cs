@@ -64,7 +64,7 @@ public class Ghost : MonoBehaviour
             currFurniture = f;
             f.possessed = true;
             gm.tracking = currFurniture.transform;
-            cooldown = 10;
+            cooldown = 4;
         }
 
         currFurniture = f;

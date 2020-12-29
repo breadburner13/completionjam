@@ -11,7 +11,7 @@ public class CameraScript : MonoBehaviour
     {
         x_input = Input.GetAxisRaw("Horizontal");
         y_input = Input.GetAxisRaw("Vertical");
-        Vector2 direction = new Vector2(x_input, y_input).normalized * Time.deltaTime;
+        Vector2 direction = new Vector2(x_input, y_input).normalized * Time.deltaTime * 10;
         transform.position += new Vector3(direction.x, direction.y, 0);
     }
     

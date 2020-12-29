@@ -753,6 +753,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 20
+  health: 0
+  spawnpoint: {x: 0, y: 0, z: 0}
+  respawnLength: 3
+  respawn: 1
 --- !u!120 &352981428
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -878,12 +882,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 194ea7a3326377d4c80599c247ad1731, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
-  distance: 3
+  speed: 2
+  distance: 5
   fm: {fileID: 0}
   health: {fileID: 0}
   attack_timer: 0
-  cooldownTime: 6
+  cooldownTime: 5
   laser: {fileID: 0}
 --- !u!58 &352981431
 CircleCollider2D:
@@ -1276,6 +1280,7 @@ GameObject:
   - component: {fileID: 519420032}
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
+  - component: {fileID: 519420030}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1291,6 +1296,19 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_Enabled: 1
+--- !u!114 &519420030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e774aef0d3c6eb54982eb1554b9d3e89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ghost: {fileID: 893408564}
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -2871,6 +2889,7 @@ MonoBehaviour:
   currFurniture: {fileID: 113465377}
   ghostSpeed: 1
   ghostHealth: 0
+  cooldown: 0
 --- !u!4 &893408565
 Transform:
   m_ObjectHideFlags: 0
@@ -3529,6 +3548,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 20
+  health: 0
+  spawnpoint: {x: 0, y: 0, z: 0}
+  respawnLength: 3
+  respawn: 1
 --- !u!120 &1268665057
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -3654,12 +3677,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 194ea7a3326377d4c80599c247ad1731, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
-  distance: 3
+  speed: 2
+  distance: 5
   fm: {fileID: 0}
   health: {fileID: 0}
   attack_timer: 0
-  cooldownTime: 6
+  cooldownTime: 5
   laser: {fileID: 0}
 --- !u!58 &1268665060
 CircleCollider2D:
@@ -4803,6 +4826,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 20
+  health: 0
+  spawnpoint: {x: 0, y: 0, z: 0}
+  respawnLength: 3
+  respawn: 1
 --- !u!120 &1797667328
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -4928,12 +4955,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 194ea7a3326377d4c80599c247ad1731, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
-  distance: 3
+  speed: 2
+  distance: 5
   fm: {fileID: 0}
   health: {fileID: 0}
   attack_timer: 0
-  cooldownTime: 6
+  cooldownTime: 5
   laser: {fileID: 0}
 --- !u!58 &1797667331
 CircleCollider2D:
@@ -5530,6 +5557,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 20
+  health: 0
+  spawnpoint: {x: 0, y: 0, z: 0}
+  respawnLength: 3
+  respawn: 1
 --- !u!120 &2120468578
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -5655,12 +5686,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 194ea7a3326377d4c80599c247ad1731, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
-  distance: 3
+  speed: 2
+  distance: 5
   fm: {fileID: 0}
   health: {fileID: 0}
   attack_timer: 0
-  cooldownTime: 6
+  cooldownTime: 5
   laser: {fileID: 0}
 --- !u!58 &2120468581
 CircleCollider2D:
