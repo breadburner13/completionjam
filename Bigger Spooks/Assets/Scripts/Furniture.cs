@@ -30,7 +30,7 @@ public class Furniture : MonoBehaviour
 
     public int getScore()
     {
-        return (int)Math.Round(Vector3.Distance(transform.position, startPos));
+        return (int)Math.Round(Vector3.Distance(transform.position, startPos) * 100);
     }
     void OnMouseDown() 
     {
