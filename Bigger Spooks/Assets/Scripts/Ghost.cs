@@ -1,6 +1,8 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Object = UnityEngine.Object;
 
 public class Ghost : MonoBehaviour
 {
@@ -13,6 +15,7 @@ public class Ghost : MonoBehaviour
     public float ghostSpeed;
     public float ghostHealth;
     public float cooldown;
+    private Health health;
     void Start()
     {
         gm = FindObjectOfType<FurnitureManager>();
@@ -20,6 +23,7 @@ public class Ghost : MonoBehaviour
         this.ghostSR.enabled = true;
         currFurniture = null;
         cooldown = 0;
+        health = GetComponent<Health>();
     }
 
     void Update()
@@ -79,6 +83,15 @@ public class Ghost : MonoBehaviour
         if (ghostHealth <= 0)
         {
             //show's over
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Obstacle"))
+        {
+            Obstacle obstacle = other.GetComponent<Obstacle>();
+            health.LoseHealth(obstacle.damage);
         }
     }
 }
