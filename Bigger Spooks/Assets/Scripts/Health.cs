@@ -14,6 +14,10 @@ public class Health : MonoBehaviour
 
     [SerializeField] private bool respawn;
     private bool respawning;
+
+    [SerializeField] private Transform mask;
+    [SerializeField] private Transform healthBar;
+
     void Start()
     {
         spawnpoint = this.transform.position;
@@ -36,11 +40,30 @@ public class Health : MonoBehaviour
                 respawnTimer -= Time.deltaTime;
             }
         }
+        
     }
 
+    private void updateUI()
+    {
+        if (healthBar)
+        {
+            float ratio = health / (float)maxHealth;
+            var scale = mask.localScale;
+            scale.x = ratio;
+            mask.localScale = scale;
+            var left = healthBar.localPosition;
+            left.x -= (healthBar.localScale.x - healthBar.localScale.x * ratio) / 2f;
+            left.y = mask.localPosition.y;
+            left.z = -1f;
+            mask.localPosition = left;
+        }
+        
+    }
+    
     public void GainHealth(int gain)
     {
         health = Mathf.Min(health + gain, maxHealth);
+        updateUI();
     }
     
     public void LoseHealth(int loss)
@@ -49,6 +72,10 @@ public class Health : MonoBehaviour
         if (health <= 0)
         {
             Die();
+        }
+        else
+        {
+            updateUI();
         }
     }
 
