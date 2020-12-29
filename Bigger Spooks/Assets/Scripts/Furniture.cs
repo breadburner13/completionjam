@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditorInternal;
 using UnityEngine;
 using Object = UnityEngine.Object;
 
@@ -31,7 +32,7 @@ public class Furniture : MonoBehaviour
 
     public int getScore()
     {
-        return (int)Math.Round(Vector3.Distance(transform.position, startPos) * 100);
+        return (int)Math.Round(Vector3.Distance(transform.position, startPos) * 100 * friction);
     }
     void OnMouseDown() 
     {
