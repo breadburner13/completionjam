@@ -5,8 +5,8 @@ using UnityEngine;
 
 public class Health : MonoBehaviour
 {
-    public int maxHealth;
-    public int health;
+    public float maxHealth;
+    public float health;
     public Vector3 spawnpoint;
     private float respawnTimer;
     

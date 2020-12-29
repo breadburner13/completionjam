@@ -52,6 +52,7 @@ public class Furniture : MonoBehaviour
             this.furnitureRB.velocity = Vector2.zero;
             Health health = ghost.GetComponent<Health>();
             Obstacle obstacle = other.collider.GetComponent<Obstacle>();
+            ghost.updateslider(obstacle.damage);
             health.LoseHealth(obstacle.damage);
         }
     }
