@@ -550,11 +550,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2af27d92025f9434296ed94540b3e0be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  move_speed: 2
+  move_speed: 3
   Fmanager: {fileID: 1031228941}
   door_vect: {x: 0, y: 1, z: 0}
   door: {fileID: 1755424121}
-  attack_length: 0
+  attack_length: 4
   flash: {fileID: 1287189088}
 --- !u!212 &691676494
 SpriteRenderer:
