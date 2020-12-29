@@ -132,8 +132,8 @@ GameObject:
   - component: {fileID: 63760901}
   - component: {fileID: 63760900}
   m_Layer: 0
-  m_Name: GameManager
-  m_TagString: Untagged
+  m_Name: FurnitureManager
+  m_TagString: FurnitureManager
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -156,6 +156,9 @@ MonoBehaviour:
   - {fileID: 678633026}
   - {fileID: 178887776}
   tracking: {fileID: 0}
+  trackingRB: {fileID: 0}
+  levelTimer: 20
+  gameManager: {fileID: 0}
 --- !u!4 &63760901
 Transform:
   m_ObjectHideFlags: 0
@@ -1635,6 +1638,8 @@ MonoBehaviour:
   currFurniture: {fileID: 1192527681}
   ghostSpeed: 1
   ghostHealth: 0
+  cooldown: 0
+  HP: {fileID: 0}
 --- !u!4 &2095100370
 Transform:
   m_ObjectHideFlags: 0
