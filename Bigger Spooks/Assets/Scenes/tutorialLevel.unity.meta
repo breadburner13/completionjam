@@ -1,5 +1,10 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Bigger Spooks/Assets/Enemies.meta
+guid: e6e643cbd7ff64a408a18b20c8cc5bae
+folderAsset: yes
+=======
 guid: c33f4e4b0ffe947f29415bdce7723997
+>>>>>>> f0ab8781f9c748a3a0a7817c03516902972ca7d7:Bigger Spooks/Assets/Scenes/tutorialLevel.unity.meta
 DefaultImporter:
   externalObjects: {}
   userData: 

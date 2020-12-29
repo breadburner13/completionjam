@@ -36,6 +36,7 @@ public class Ghost : MonoBehaviour
             currFurniture.possessed = false;
             currFurniture = null;
             gm.tracking = this.transform;
+            gm.trackingRB = GetComponent<Rigidbody2D>();
         }
         if(cooldown > 0){
             cooldown -= Time.deltaTime * ghostSpeed;
@@ -47,7 +48,7 @@ public class Ghost : MonoBehaviour
         if(currFurniture)
         {
             currFurniture.furnitureRB.velocity = new Vector2(x_input, y_input).normalized * currFurniture.speed * ghostSpeed;
-            Debug.Log(gm.calculateScore());
+            //Debug.Log(gm.calculateScore());
         }
     }
 
@@ -65,6 +66,11 @@ public class Ghost : MonoBehaviour
             gm.tracking = currFurniture.transform;
             cooldown = 10;
         }
+
+        currFurniture = f;
+        f.possessed = true;
+        gm.tracking = currFurniture.transform;
+        gm.trackingRB = currFurniture.GetComponent<Rigidbody2D>();
     }
 
     public void takeDamage(float dmg)
