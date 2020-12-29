@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Object = UnityEngine.Object;
+using UnityEngine.UI;
 
 public class Ghost : MonoBehaviour
 {
@@ -16,6 +17,8 @@ public class Ghost : MonoBehaviour
     public float ghostHealth;
     public float cooldown;
     private Health health;
+    [SerializeField]
+    private Slider HP;
     void Start()
     {
         gm = FindObjectOfType<FurnitureManager>();
@@ -24,6 +27,7 @@ public class Ghost : MonoBehaviour
         currFurniture = null;
         cooldown = 0;
         health = GetComponent<Health>();
+        HP.value = 1;
     }
 
     void Update()
@@ -79,7 +83,8 @@ public class Ghost : MonoBehaviour
 
     public void takeDamage(float dmg)
     {
-        ghostHealth -= dmg; 
+        ghostHealth -= dmg;
+        HP.value = health.health / health.maxHealth;
         if (ghostHealth <= 0)
         {
             //show's over
@@ -91,7 +96,12 @@ public class Ghost : MonoBehaviour
         if (other.CompareTag("Obstacle"))
         {
             Obstacle obstacle = other.GetComponent<Obstacle>();
+            updateslider(obstacle.damage);
             health.LoseHealth(obstacle.damage);
         }
+    }
+    public void updateslider(float dmg)
+    {
+        HP.value = (health.health - dmg) / health.maxHealth;
     }
 }
