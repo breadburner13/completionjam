@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -14,6 +15,8 @@ public class GhostBuster : MonoBehaviour
     private Rigidbody2D gbRB;
     #endregion
 
+    public Health health;
+    
     #region attack_vars
 
     [SerializeField] 
@@ -32,6 +35,7 @@ public class GhostBuster : MonoBehaviour
         attack_timer = 0;
         fm = FindObjectOfType<FurnitureManager>();
         laser = GetComponent<LaserController>();
+        health = GetComponent<Health>();
     }
 
     // Update is called once per frame
@@ -67,4 +71,13 @@ public class GhostBuster : MonoBehaviour
         gbRB.velocity = distance.normalized * speed;
     }
     #endregion
+
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.collider.CompareTag("Furniture"))
+        {
+            health.LoseHealth((int) other.rigidbody.velocity.magnitude);
+        }
+    }
+    
 }
