@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Object = UnityEngine.Object;
 
 public class Furniture : MonoBehaviour
 {
@@ -42,5 +43,16 @@ public class Furniture : MonoBehaviour
         // Debug.Log("gotta fight the fear Im the first to admit it Sheer thoughts provoke the new era Become a big terror, but my only rival is my shadow Rewind then play it back and");
         // Debug.Log("fix my own error Get low to the ground, its getting better Like I told you before, double up and take more cheddar L to the J, say stay laced, heres my card, B Royal flush and Im the ace");
         ghost.possess(this);
+    }
+
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.collider.CompareTag("Obstacle") && this.possessed)
+        {
+            this.furnitureRB.velocity = Vector2.zero;
+            Health health = ghost.GetComponent<Health>();
+            Obstacle obstacle = other.collider.GetComponent<Obstacle>();
+            health.LoseHealth(obstacle.damage);
+        }
     }
 }
