@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: e995197ee78b993418c8a1f8368e3ca7
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Hello_Pumpkin
+  fontNames:
+  - Hello_Pumpkin
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 4d188aba57de856449eb492d9e012781, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
