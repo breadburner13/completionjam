@@ -12,12 +12,14 @@ public class Ghost : MonoBehaviour
     private Vector3 mousepos;
     public float ghostSpeed;
     public float ghostHealth;
+    public float cooldown;
     void Start()
     {
         gm = FindObjectOfType<FurnitureManager>();
         ghostSR = GetComponent<SpriteRenderer>();
         this.ghostSR.enabled = true;
         currFurniture = null;
+        cooldown = 0;
     }
 
     void Update()
@@ -28,13 +30,16 @@ public class Ghost : MonoBehaviour
         mousepos.z = 10;
         this.transform.position = mousepos;
         move();
-        if (Input.GetKeyDown("z"))
+        if (Input.GetKeyDown("z") && cooldown <= 0)
         {
             this.ghostSR.enabled = true;
             currFurniture.possessed = false;
             currFurniture = null;
             gm.tracking = this.transform;
             gm.trackingRB = GetComponent<Rigidbody2D>();
+        }
+        if(cooldown > 0){
+            cooldown -= Time.deltaTime * ghostSpeed;
         }
     }
 
@@ -49,11 +54,19 @@ public class Ghost : MonoBehaviour
 
     public void possess(Furniture f)
     {
-        this.ghostSR.enabled = false;
-        if(currFurniture)
+        if(cooldown <= 0)
         {
-            currFurniture.possessed = false;
+            this.ghostSR.enabled = false;
+            if(currFurniture)
+            {
+                currFurniture.possessed = false;
+            }
+            currFurniture = f;
+            f.possessed = true;
+            gm.tracking = currFurniture.transform;
+            cooldown = 10;
         }
+
         currFurniture = f;
         f.possessed = true;
         gm.tracking = currFurniture.transform;
