@@ -15,7 +15,8 @@ public class Ghost : MonoBehaviour
     private Vector3 mousepos;
     public float ghostSpeed;
     public float ghostHealth;
-    public float cooldown;
+    public float cooldownLength;
+    private float cooldown;
     private Health health;
     [SerializeField]
     private Slider HP;
@@ -72,7 +73,7 @@ public class Ghost : MonoBehaviour
             currFurniture = f;
             f.possessed = true;
             gm.tracking = currFurniture.transform;
-            cooldown = 4;
+            cooldown = cooldownLength;
         }
 
         currFurniture = f;
