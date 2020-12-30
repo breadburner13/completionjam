@@ -47,6 +47,7 @@ public class GhostBuster : MonoBehaviour
             if (Vector3.Distance(transform.position, fm.tracking.position) <= distance && 
                 Time.time - lastFireTime >= cooldownTime)
             {
+                Debug.Log("hi");
                 laser.Fire();
                 lastFireTime = Time.time;
                 attack_timer = laser.attackLength;
