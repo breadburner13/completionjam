@@ -68,6 +68,8 @@ public class Investigator : MonoBehaviour
             Vector3 target = Fmanager.tracking.position;
             Vector2 direction = target - transform.position;
             InvestRB.velocity = direction.normalized * move_speed;
+            float angle = Mathf.Atan2(direction.y,direction.x) * Mathf.Rad2Deg;
+            transform.rotation = Quaternion.AngleAxis(angle - 90, Vector3.forward);
         }
         else
         {

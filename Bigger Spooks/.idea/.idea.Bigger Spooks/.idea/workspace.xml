@@ -21,14 +21,10 @@
   <component name="ChangeListManager">
     <list default="true" id="e63a956e-8f7d-4ae1-8f46-80b466b92b73" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Bigger Spooks/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Bigger Spooks/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/FurnitureGhostArt/CHAIRS.psd.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/FurnitureGhostArt/CHAIRS.psd.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/FurnitureGhostArt/creepyTable.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/FurnitureGhostArt/creepyTable.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/FurnitureGhostArt/floorTile.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/FurnitureGhostArt/floorTile.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/FurnitureGhostArt/whiteFloorTile.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/FurnitureGhostArt/whiteFloorTile.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/GhostBuster.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/GhostBuster.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Furniture.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Furniture.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FurnitureManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FurnitureManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ghost.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Ghost.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GhostBuster.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GhostBuster.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Investigator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Investigator.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,12 +47,13 @@
         <option value="$PROJECT_DIR$/Assets/Enemies/GhostBuster.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ghostbuster.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LaserController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GhostBuster.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Obstacle.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Health.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Furniture.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/FurnitureManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Ghost.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GhostBuster.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Investigator.cs" />
       </list>
     </option>
   </component>
@@ -101,7 +98,7 @@
       <updated>1609123055035</updated>
       <workItem from="1609123073355" duration="2434000" />
       <workItem from="1609186451632" duration="5710000" />
-      <workItem from="1609193334393" duration="10219000" />
+      <workItem from="1609193334393" duration="11090000" />
     </task>
     <servers />
   </component>
