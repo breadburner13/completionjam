@@ -8928,7 +8928,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 602672393}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 31.577368, y: 6.8111477, z: -203.20595}
+  m_LocalPosition: {x: 31.577368, y: 6.8111477, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 909012348}
@@ -9550,6 +9550,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pink Sink
       objectReference: {fileID: 0}
+    - target: {fileID: 9042718481798229494, guid: 9b66a398787934e32ae9febb3f2736de,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9042718481798229495, guid: 9b66a398787934e32ae9febb3f2736de,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9563,7 +9568,7 @@ PrefabInstance:
     - target: {fileID: 9042718481798229495, guid: 9b66a398787934e32ae9febb3f2736de,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 406.4119
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 9042718481798229495, guid: 9b66a398787934e32ae9febb3f2736de,
         type: 3}
@@ -12979,7 +12984,7 @@ PrefabInstance:
     - target: {fileID: 5788515440618947926, guid: 6e03b38b168c74cd6b5faf16636f60f1,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 203.20595
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5788515440618947926, guid: 6e03b38b168c74cd6b5faf16636f60f1,
         type: 3}
@@ -13364,7 +13369,7 @@ PrefabInstance:
     - target: {fileID: 8206419507146848316, guid: d6f74c90bf68341d6bb85144645436e8,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 203.20595
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8206419507146848316, guid: d6f74c90bf68341d6bb85144645436e8,
         type: 3}
@@ -13572,7 +13577,7 @@ PrefabInstance:
     - target: {fileID: 9042718481798229495, guid: 9b66a398787934e32ae9febb3f2736de,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 203.20595
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 9042718481798229495, guid: 9b66a398787934e32ae9febb3f2736de,
         type: 3}
