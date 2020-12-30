@@ -19,6 +19,9 @@ public class FurnitureManager : MonoBehaviour
         trackingRB = FindObjectOfType<Ghost>().GetComponent<Rigidbody2D>();
         gameManager = FindObjectOfType<GameManager>();
         gameManager.furnitureManager = this;
+        furnitures = FindObjectsOfType<Furniture>();
+        Debug.Log(furnitures.Length);
+        Debug.Log(furnitures[furnitures.Length - 1]);
     }
     void Update()
     {
