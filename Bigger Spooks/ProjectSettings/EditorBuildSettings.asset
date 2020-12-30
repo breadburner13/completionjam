@@ -17,4 +17,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/LoseScreen.unity
     guid: e160a8c1e88f9584dbe2805ffecb42df
+  - enabled: 1
+    path: Assets/Scenes/story1.unity
+    guid: c7cea11f120f141a5a06618bbdc96d52
+  - enabled: 1
+    path: Assets/Scenes/Level 1.unity
+    guid: 32fbc27a8e3a34953a7a04f8cf4a9540
+  - enabled: 1
+    path: Assets/Scenes/Level3.unity
+    guid: 838a3df117f46b54ba35be8bfde8698f
+  - enabled: 1
+    path: Assets/Scenes/KRISCHANJERRYLEVEL.unity
+    guid: 82a5c54da19c7fe4fb0ca91d9a524abf
   m_configObjects: {}
