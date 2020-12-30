@@ -47,7 +47,10 @@ public class Ghost : MonoBehaviour
         {
             this.ghostSR.enabled = true;
             ghostCol.enabled = true;
-            currFurniture.possessed = false;
+            if (currFurniture)
+            {
+                currFurniture.possessed = false;   
+            }
             currFurniture = null;
             gm.tracking = this.transform;
             gm.trackingRB = GetComponent<Rigidbody2D>();

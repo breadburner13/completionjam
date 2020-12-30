@@ -30,12 +30,10 @@ public class Furniture : MonoBehaviour
         
         if (possessed)
         {
-            Debug.Log("green");
             GetComponent<SpriteRenderer>().color = new Color(79.0f/255, 244.0f/255, 129.0f/255, 1);
         }
         else
         {
-            Debug.Log("white");
             GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, 1);
         }
     }
