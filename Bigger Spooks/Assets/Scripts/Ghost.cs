@@ -41,7 +41,7 @@ public class Ghost : MonoBehaviour
         x_input = Input.GetAxisRaw("Horizontal");
         y_input = Input.GetAxisRaw("Vertical");
         mousepos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        mousepos.z = 10;
+        mousepos.z = 20;
         this.transform.position = mousepos;
         move();
         if (Input.GetKeyDown("z") && cooldown <= 0)
@@ -62,7 +62,7 @@ public class Ghost : MonoBehaviour
             gm.trackingRB = GetComponent<Rigidbody2D>();
         }
         if(cooldown > 0){
-            cooldown -= Time.deltaTime * ghostSpeed;
+            cooldown -= Time.deltaTime;
         }
         // if(currGB && currGB.transform.position.x > 9000)
         // {

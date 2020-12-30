@@ -21,7 +21,29 @@
   <component name="ChangeListManager">
     <list default="true" id="e63a956e-8f7d-4ae1-8f46-80b466b92b73" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Bigger Spooks/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Bigger Spooks/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FurnitureManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FurnitureManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Bed.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Bed.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Desk.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Desk.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Empty Table.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Empty Table.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Flowers.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Flowers.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Fridge.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Fridge.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/GhostBuster.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/GhostBuster.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Investigator.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Investigator.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Living Room Table (1).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Living Room Table (1).prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Living Room Table.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Living Room Table.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Mirror.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Mirror.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Pink Bathtub.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Pink Bathtub.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Pink Sink.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Pink Sink.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Plastic Chair.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Plastic Chair.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Salt.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Salt.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Sofa Chair.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Sofa Chair.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Sofa.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Sofa.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Sunflower.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Sunflower.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Television.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Television.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Toilet.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Toilet.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Wooden Chair.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Wooden Chair.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level 1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level 2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level 2.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ghost.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Ghost.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +55,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/LaserController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ghostbuster.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GhostBuster.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Health.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/FurnitureManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../Forked/PartySampleFall2020/Assets/Scripts/Health.cs" root0="SKIP_HIGHLIGHTING" />
@@ -46,11 +68,11 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/LaserController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Obstacle.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Health.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GhostBuster.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Investigator.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Ghost.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Furniture.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/FurnitureManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GhostBuster.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Furniture.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Ghost.cs" />
       </list>
     </option>
   </component>
@@ -95,7 +117,7 @@
       <updated>1609123055035</updated>
       <workItem from="1609123073355" duration="2434000" />
       <workItem from="1609186451632" duration="5710000" />
-      <workItem from="1609193334393" duration="13564000" />
+      <workItem from="1609193334393" duration="15361000" />
     </task>
     <servers />
   </component>
