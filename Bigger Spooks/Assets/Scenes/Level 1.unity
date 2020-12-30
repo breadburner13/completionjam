@@ -7807,6 +7807,11 @@ PrefabInstance:
       propertyPath: distance
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 5651605176335655012, guid: c763c6ac31397408cbb7858ba3739915,
+        type: 3}
+      propertyPath: speed
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5651605176335655014, guid: c763c6ac31397408cbb7858ba3739915,
         type: 3}
       propertyPath: m_SortingOrder
