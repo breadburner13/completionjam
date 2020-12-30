@@ -584,9 +584,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slides:
-  - I used to rule... the world
+  - I used to rule... the world...
   - However miniscule and insignificant that world may have been.
-  - Even my only friend, bubby, has left me...
+  - Even my only friend, Bubby, has left me...
   index: 0
   nextScene: Level 1
   text: {fileID: 464310306}

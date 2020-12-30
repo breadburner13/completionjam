@@ -34,6 +34,7 @@ public class Ghost : MonoBehaviour
         cooldown = 0;
         health = GetComponent<Health>();
         HP.value = 1;
+        //cooldownTimer.color = Color.white;
     }
 
     void Update()

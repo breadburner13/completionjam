@@ -58462,6 +58462,7 @@ MonoBehaviour:
   levelTimer: 120
   gameManager: {fileID: 0}
   timer: {fileID: 1399265168}
+  nextScene: LoseScreen
 --- !u!4 &1782251208
 Transform:
   m_ObjectHideFlags: 0

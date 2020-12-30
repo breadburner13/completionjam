@@ -12,6 +12,7 @@ public class FurnitureManager : MonoBehaviour
     public float levelTimer;
     public GameManager gameManager;
     public Text timer;
+    public string nextScene;
 
     void Awake() 
     {
@@ -28,7 +29,7 @@ public class FurnitureManager : MonoBehaviour
         if(levelTimer <= 0)
         {
             gameManager.score += calculateScore();
-            SceneManager.LoadScene("MainMenu");  //change this later
+            SceneManager.LoadScene(nextScene);  //change this later
             Debug.Log(gameManager.score);
         }
         levelTimer -= Time.deltaTime;

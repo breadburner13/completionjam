@@ -26,7 +26,7 @@ public class GameManager : MonoBehaviour
 
     public void tutorialLevel()
     {
-        SceneManager.LoadScene("SampleScene"); //change this and add more scene transitions later
+        SceneManager.LoadScene("story1");
     }
 
     public void LoadMain()

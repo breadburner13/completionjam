@@ -584,12 +584,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slides:
-  - Yes, I was just a measley manual laborer in some lofty corporation
+  - Yes, I was just a measly manual laborer in some lofty corporation.
   - But I was the company's best for over 20 years!
   - Until... I got old
-  - My joints stopped working. My back made more noise than a piano.
-  - These young-uns kept one-upping, and all I could do was watch.
-  - After all those years, giving the compant all I had, and I get kicked into the
+  - My joints and muscles began to fail me. My body laid boneless on the ground on
+    more than one occasion.
+  - These young-uns kept one-upping me, and all I could do was watch.
+  - After all those years, giving the company all I had, and I get kicked into the
     curb like this?!
   - Why did I have to die such a useless and lonely death?
   index: 0

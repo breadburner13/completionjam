@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEditor.UIElements;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Health : MonoBehaviour
 {
@@ -85,6 +86,11 @@ public class Health : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
+        if(GetComponent<Ghost>())
+        {
+            SceneManager.LoadScene("LoseScreen");
+        }
+
         this.transform.position = new Vector3(100000,100000,0);
         respawnTimer = respawnLength;
         respawning = true;

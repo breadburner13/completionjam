@@ -11,5 +11,6 @@ public class ShowScore : MonoBehaviour
     {
         gameManager = FindObjectOfType<GameManager>();
         scoreText.text = "Your Score: " + gameManager.score.ToString();
+        gameManager.score = 0;
     }
 }
