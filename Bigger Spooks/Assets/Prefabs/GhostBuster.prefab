@@ -136,12 +136,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 194ea7a3326377d4c80599c247ad1731, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
+  speed: 1
   distance: 5
   fm: {fileID: 0}
   health: {fileID: 0}
   attack_timer: 0
-  cooldownTime: 5
+  cooldownTime: 10
   laser: {fileID: 0}
 --- !u!114 &5651605176335655015
 MonoBehaviour:
