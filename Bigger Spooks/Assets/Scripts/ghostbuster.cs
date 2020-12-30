@@ -69,6 +69,8 @@ public class GhostBuster : MonoBehaviour
         Vector2 ghost_pos = new Vector2(fm.tracking.position.x, fm.tracking.position.y);
         Vector2 distance = ghost_pos - my_pos;
         gbRB.velocity = distance.normalized * speed;
+        float angle = Mathf.Atan2(distance.y,distance.x) * Mathf.Rad2Deg;
+        transform.rotation = Quaternion.AngleAxis(angle - 90, Vector3.forward);
     }
     #endregion
 

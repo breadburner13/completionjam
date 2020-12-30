@@ -12,18 +12,23 @@ public class Ghost : MonoBehaviour
     private float y_input;
     private FurnitureManager gm;
     private SpriteRenderer ghostSR;
+    private Collider2D ghostCol;
     private Vector3 mousepos;
     public float ghostSpeed;
-    public float ghostHealth;
-    public float cooldown;
+    public float cooldownLength;
+    private float cooldown;
     private Health health;
     [SerializeField]
     private Slider HP;
+
+    [SerializeField] private Text cooldownTimer;
     void Start()
     {
         gm = FindObjectOfType<FurnitureManager>();
         ghostSR = GetComponent<SpriteRenderer>();
         this.ghostSR.enabled = true;
+        ghostCol = GetComponent<Collider2D>();
+        ghostCol.enabled = true;
         currFurniture = null;
         cooldown = 0;
         health = GetComponent<Health>();
@@ -41,7 +46,11 @@ public class Ghost : MonoBehaviour
         if (Input.GetKeyDown("z") && cooldown <= 0)
         {
             this.ghostSR.enabled = true;
-            currFurniture.possessed = false;
+            ghostCol.enabled = true;
+            if (currFurniture)
+            {
+                currFurniture.possessed = false;   
+            }
             currFurniture = null;
             gm.tracking = this.transform;
             gm.trackingRB = GetComponent<Rigidbody2D>();
@@ -49,6 +58,8 @@ public class Ghost : MonoBehaviour
         if(cooldown > 0){
             cooldown -= Time.deltaTime * ghostSpeed;
         }
+
+        cooldownTimer.text = "Cooldown: " + (int) cooldown;
     }
 
     private void move()
@@ -62,32 +73,21 @@ public class Ghost : MonoBehaviour
 
     public void possess(Furniture f)
     {
-        if(cooldown <= 0)
+        if (cooldown <= 0)
         {
             this.ghostSR.enabled = false;
-            if(currFurniture)
+            ghostCol.enabled = false;
+            if (currFurniture)
             {
                 currFurniture.possessed = false;
             }
+
             currFurniture = f;
             f.possessed = true;
             gm.tracking = currFurniture.transform;
-            cooldown = 4;
-        }
+            cooldown = cooldownLength;
+            gm.trackingRB = currFurniture.GetComponent<Rigidbody2D>();
 
-        currFurniture = f;
-        f.possessed = true;
-        gm.tracking = currFurniture.transform;
-        gm.trackingRB = currFurniture.GetComponent<Rigidbody2D>();
-    }
-
-    public void takeDamage(float dmg)
-    {
-        ghostHealth -= dmg;
-        HP.value = health.health / health.maxHealth;
-        if (ghostHealth <= 0)
-        {
-            //show's over
         }
     }
 

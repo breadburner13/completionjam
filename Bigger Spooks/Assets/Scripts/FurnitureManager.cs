@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class FurnitureManager : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class FurnitureManager : MonoBehaviour
     public Rigidbody2D trackingRB;
     public float levelTimer;
     public GameManager gameManager;
+    public Text timer;
 
     void Awake() 
     {
@@ -27,6 +29,7 @@ public class FurnitureManager : MonoBehaviour
             Debug.Log(gameManager.score);
         }
         levelTimer -= Time.deltaTime;
+        timer.text = "Time: " + (int)levelTimer;
     }
 
     public int calculateScore()

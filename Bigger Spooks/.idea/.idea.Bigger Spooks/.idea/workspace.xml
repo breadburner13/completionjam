@@ -20,12 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e63a956e-8f7d-4ae1-8f46-80b466b92b73" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Bigger Spooks/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Bigger Spooks/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Bigger Spooks/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Bigger Spooks/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/GhostBuster.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/GhostBuster.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Furniture.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Furniture.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ghost.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Ghost.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,17 +39,19 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GhostBuster.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Health.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/FurnitureManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../Forked/PartySampleFall2020/Assets/Scripts/Health.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/Enemies/GhostBuster.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/FurnitureManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ghostbuster.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LaserController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Health.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GhostBuster.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Obstacle.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Health.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/FurnitureManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GhostBuster.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Investigator.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Ghost.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Furniture.cs" />
       </list>
@@ -97,7 +98,7 @@
       <updated>1609123055035</updated>
       <workItem from="1609123073355" duration="2434000" />
       <workItem from="1609186451632" duration="5710000" />
-      <workItem from="1609193334393" duration="4695000" />
+      <workItem from="1609193334393" duration="12965000" />
     </task>
     <servers />
   </component>
@@ -122,6 +123,11 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="725" y="123" width="708" height="557" key="VCS.FileHistoryDialog" timestamp="1609278724794">
+      <screen x="0" y="23" width="1440" height="801" />
+    </state>
+    <state x="725" y="123" width="708" height="557" key="VCS.FileHistoryDialog/0.23.1440.798@0.23.1440.798" timestamp="1609275887441" />
+    <state x="725" y="123" width="708" height="557" key="VCS.FileHistoryDialog/0.23.1440.801@0.23.1440.801" timestamp="1609278724794" />
     <state x="470" y="141" width="672" height="678" key="search.everywhere.popup" timestamp="1609189709149">
       <screen x="0" y="23" width="1440" height="797" />
     </state>
