@@ -436,6 +436,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: GhostBuster (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 5651605176335655012, guid: c763c6ac31397408cbb7858ba3739915,
+        type: 3}
+      propertyPath: speed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5651605176335655012, guid: c763c6ac31397408cbb7858ba3739915,
+        type: 3}
+      propertyPath: distance
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5651605176335655012, guid: c763c6ac31397408cbb7858ba3739915,
+        type: 3}
+      propertyPath: cooldownTime
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5651605176335655016, guid: c763c6ac31397408cbb7858ba3739915,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -10159,6 +10174,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: GhostBuster (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5651605176335655012, guid: c763c6ac31397408cbb7858ba3739915,
+        type: 3}
+      propertyPath: speed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5651605176335655012, guid: c763c6ac31397408cbb7858ba3739915,
+        type: 3}
+      propertyPath: distance
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5651605176335655012, guid: c763c6ac31397408cbb7858ba3739915,
+        type: 3}
+      propertyPath: cooldownTime
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5651605176335655016, guid: c763c6ac31397408cbb7858ba3739915,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -11273,6 +11303,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: GhostBuster (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5651605176335655012, guid: c763c6ac31397408cbb7858ba3739915,
+        type: 3}
+      propertyPath: speed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5651605176335655012, guid: c763c6ac31397408cbb7858ba3739915,
+        type: 3}
+      propertyPath: distance
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5651605176335655012, guid: c763c6ac31397408cbb7858ba3739915,
+        type: 3}
+      propertyPath: cooldownTime
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5651605176335655016, guid: c763c6ac31397408cbb7858ba3739915,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -12264,6 +12309,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GhostBuster (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5651605176335655012, guid: c763c6ac31397408cbb7858ba3739915,
+        type: 3}
+      propertyPath: speed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5651605176335655012, guid: c763c6ac31397408cbb7858ba3739915,
+        type: 3}
+      propertyPath: distance
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5651605176335655012, guid: c763c6ac31397408cbb7858ba3739915,
+        type: 3}
+      propertyPath: cooldownTime
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5651605176335655016, guid: c763c6ac31397408cbb7858ba3739915,
         type: 3}
@@ -13523,6 +13583,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GhostBuster
+      objectReference: {fileID: 0}
+    - target: {fileID: 5651605176335655012, guid: c763c6ac31397408cbb7858ba3739915,
+        type: 3}
+      propertyPath: speed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5651605176335655012, guid: c763c6ac31397408cbb7858ba3739915,
+        type: 3}
+      propertyPath: distance
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5651605176335655012, guid: c763c6ac31397408cbb7858ba3739915,
+        type: 3}
+      propertyPath: cooldownTime
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5651605176335655016, guid: c763c6ac31397408cbb7858ba3739915,
         type: 3}

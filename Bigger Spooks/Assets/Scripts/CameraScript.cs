@@ -20,11 +20,20 @@ public class CameraScript : MonoBehaviour
         transform.position = new Vector3(ghost.currFurniture.transform.position.x, ghost.currFurniture.transform.position.y, -10);
     }
 
+    void moveGB()
+    {
+        transform.position = new Vector3(ghost.currGB.transform.position.x, ghost.currGB.transform.position.y, -10);
+    }
+
     void Update() 
     {
         if(ghost.currFurniture)
         {
             moveFurniture();
+        }
+        else if(ghost.currGB)
+        {
+            moveGB();
         }
         else
         {
