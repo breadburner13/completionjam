@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+#if UNITY_EDITOR
 using UnityEditorInternal;
+#endif
 using UnityEngine;
 using Object = UnityEngine.Object;
 
